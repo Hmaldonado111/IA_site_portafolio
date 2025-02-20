@@ -8,7 +8,7 @@ body {
 header {
     background-color: #064420;
     color: white;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -18,8 +18,7 @@ nav ul {
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 60px;
 }
 
 nav ul li a {
@@ -35,7 +34,7 @@ nav ul li a:hover, nav ul li a:focus {
 } 
 
 #nombre {
-    font-size: 8vw;
+    font-size: 10vw;
     text-align: center;
     margin-top: 5px;
     font-weight: bold;
@@ -44,9 +43,25 @@ nav ul li a:hover, nav ul li a:focus {
 
 .sobre-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre-container h2 {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
 }
 
 .foto-perfil {
@@ -72,20 +87,25 @@ nav ul li a:hover, nav ul li a:focus {
     transform: scale(1.1) rotate(2deg);
 }
 
+.proyectos-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+   
+}
 
 .proyecto {
     background-color: white;
-    padding: 20px;
+    padding: 35px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 90%;
-    max-width: 300px;
 }
 
 .imagen-proyecto {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -110,13 +130,12 @@ nav ul li a:hover, nav ul li a:focus {
     text-align: center;
     background-color: #064420;
     color: white;
-    padding: 20px;
 }
 
-h2 {
+h2{
     text-align: center;
     text-decoration: overline;
-    padding: 20px;
+    padding: 40px;
 }
 
 @media (max-width: 768px) {
