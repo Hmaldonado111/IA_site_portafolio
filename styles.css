@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2e9;
+}
+
+header {
+    background-color: #064420;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    transform: scale(1.1);
+    font-size: 1.2em;
+} 
+
+#nombre {
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    transition: opacity 0.3s ease, color 1s ease-in-out;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre-container h2 {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.foto-perfil {
+    width: 450px;
+    height: 450px;
+    border-radius: 20%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 60s ease-out, opacity 3s ease-out;
+}
+
+.sobre-texto {
+    flex: 1;
+    max-width: 50%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+    padding: 70px;
+    text-transform: unset;
+}
+
+.foto-perfil:hover, .sobre-texto:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+.proyectos-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+   
+}
+
+.proyecto {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.imagen-proyecto {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #57a773;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #064420;
+    transform: scale(1.1);
+}
+
+#contacto {
+    text-align: center;
+    background-color: #064420;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    text-decoration: overline;
+    padding: 40px;
+}
+
+
