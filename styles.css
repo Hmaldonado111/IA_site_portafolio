@@ -8,7 +8,7 @@ body {
 header {
     background-color: #064420;
     color: white;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -18,7 +18,8 @@ nav ul {
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -34,7 +35,7 @@ nav ul li a:hover, nav ul li a:focus {
 } 
 
 #nombre {
-    font-size: 10vw;
+    font-size: 8vw;
     text-align: center;
     margin-top: 5px;
     font-weight: bold;
@@ -43,69 +44,44 @@ nav ul li a:hover, nav ul li a:focus {
 
 .sobre-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 50px;
-    position: relative;
-    overflow: hidden;
-}
-
-.sobre-container h2 {
-    position: absolute;
-    top: 10px;
-    text-align: center;
-    width: 100%;
-}
-
-.sobre-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 70%;
 }
 
 .foto-perfil {
-    width: 450px;
-    height: 450px;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
     border-radius: 20%;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: transform 60s ease-out, opacity 3s ease-out;
 }
 
 .sobre-texto {
-    flex: 1;
-    max-width: 50%;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
-    padding: 70px;
-    text-transform: unset;
-}
-
-.foto-perfil:hover, .sobre-texto:hover {
-    transform: scale(1.1) rotate(2deg);
+    text-align: center;
+    max-width: 90%;
+    padding: 20px;
 }
 
 .proyectos-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
-   
+    gap: 20px;
 }
 
 .proyecto {
     background-color: white;
-    padding: 35px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 90%;
+    max-width: 300px;
 }
 
 .imagen-proyecto {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -130,12 +106,22 @@ nav ul li a:hover, nav ul li a:focus {
     text-align: center;
     background-color: #064420;
     color: white;
+    padding: 20px;
 }
 
-h2{
+h2 {
     text-align: center;
     text-decoration: overline;
-    padding: 40px;
+    padding: 20px;
 }
 
-
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #nombre {
+        font-size: 12vw;
+    }
+}
