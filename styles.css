@@ -138,13 +138,3 @@ h2{
     padding: 40px;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    #nombre {
-        font-size: 12vw;
-    }
-}
